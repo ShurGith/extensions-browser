@@ -18,7 +18,7 @@ function ButtonGroup() {
             });
         } else if (selector === 'activos') {
             cardInactives.forEach(card => {
-                card.style.display = 'none';            
+                card.style.display = 'none';
             });
             cardActives.forEach(card => {
                 card.style.display = 'flex';
@@ -32,7 +32,7 @@ function ButtonGroup() {
     }
 
     return (
-        <div className='flex justify-between mt-4 px-4'  >
+        <div className='flex flex-col gap-4 justify-center lg:flex-row lg:justify-between items-center my-2 lg:my-4 px-4 lg:px-0  w-full boder'  >
             <h1 className="text-3xl font-siete font-display dark:text-neutro-5">Extensions List</h1>
             <div className='flex gap-2'>
                 {botones.map((boton, index) => (
